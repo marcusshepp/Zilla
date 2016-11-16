@@ -11,13 +11,10 @@ const char *special_words[] = {
 };
 
 char *split_tokens_by_space(char tokens[]){
-    char *space = " ";
     char *split_tokens = malloc(10 * sizeof(char));
+    char *
     int i;
-    for(i = 0; i < 10; i++){
-        if(strcmp(&tokens[i], "") != 1)
-            split_tokens[i] = tokens[i];
-    }
+
     for(i = 0; i < 10; i++)
         printf("split_tokens[%d]: %c\n", i, split_tokens[i]);
     return split_tokens;
